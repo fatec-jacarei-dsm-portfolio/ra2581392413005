@@ -1,0 +1,244 @@
+// === VARIABLES ===
+$bg-color: #F6F0E0; // fundo cremoso
+$text-color: #0f172a; // azul-escuro suave
+$accent-color: #1E94CB; // ciano acentuado
+$highlight-color: #0e7aac; // azul mais claro (efeito hover)
+$font-stack: 'Orbitron', 'Roboto', sans-serif;
+
+// === FONTS ===
+
+@font-face {
+  font-family: "Tysla";
+  src: url("./Tysla.otf");
+}
+
+@font-face {
+  font-family:"Frost" ;
+ src: url("./jf.otf");
+
+}
+
+// === BREAKPOINTS ===
+$breakpoint-sm: 640px;  // small devices (ex: iPhone 7+)
+$breakpoint-md: 768px;  // medium devices (ex: iPad vertical)
+$breakpoint-lg: 1024px; // large devices (ex: iPad horizontal, notebooks pequenos)
+$breakpoint-xl: 1280px; // extra large (desktops normais)
+$breakpoint-2xl: 1536px; // very large (monitores grandes)
+
+// === MOBILE UNIVERSAL ===
+$breakpoint-mobile-max: 768px;
+
+
+@mixin center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@mixin sm {
+  @media (min-width: #{$breakpoint-sm}) { @content; }
+}
+
+@mixin md {
+  @media (min-width: #{$breakpoint-md}) { @content; }
+}
+
+@mixin lg {
+  @media (min-width: #{$breakpoint-lg}) { @content; }
+}
+
+@mixin xl {
+  @media (min-width: #{$breakpoint-xl}) { @content; }
+}
+
+@mixin xxl {
+  @media (min-width: #{$breakpoint-2xl}) { @content; }
+}
+
+// Cobertura especial para Mobile (tudo até 768px)
+@mixin mobile {
+  @media (max-width: #{$breakpoint-mobile-max}) { @content; }
+}
+
+
+// === GLOBAL RESET ===
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// === ROOT ===
+#root {
+  min-height: 100vh;
+  width: 100vw;
+}
+
+// === BASE ===
+body {
+  background-color: $bg-color;
+  color: $text-color;
+  font-family: $font-stack;
+  font-size: 16px;
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+// === HEADINGS ===
+h1, h2, h3, h4, h5, h6 {
+  color: $accent-color;
+  font-family: 'Frost';
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+// === LINKS ===
+a {
+  color: $accent-color;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $highlight-color;
+  }
+}
+
+// === BUTTONS ===
+button {
+  background-color: $accent-color;
+  color: $bg-color;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $highlight-color;
+  }
+}
+
+// ==== HEADER ====
+
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  @include mobile() {
+
+    gap: 5px;
+    font-size: small;
+  }
+}
+
+// === SECTION STYLES ===
+.section {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center ;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid $accent-color;
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+  @include mobile() {
+    flex-direction: column;
+  }
+}
+
+.section div{
+  padding-bottom: 200px;
+}
+
+// === FOOTER ===
+footer {
+  margin-top: auto;
+  font-size: 0.9rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+// === CLASS ===
+
+.character{
+    height: 50%;
+    width: 300px;
+    border: groove 2px;
+    border-color: $highlight-color;
+    position: relative;
+    top: 50%;
+    @include mobile() {
+      position: unset;
+    };
+}
+
+.border{
+  border: 2px solid ;
+  border-color: $highlight-color;
+}
+
+.big-title {
+  font-family: 'Tysla', 'Roboto', sans-serif; // Fonte futurista
+  font-size: 6rem; // Tamanho bem grande
+  color: $accent-color; // Azul ciano vibrante (Vaporwave)
+  text-transform: uppercase;
+  letter-spacing: 0.25rem; 
+  text-align: center;
+  margin-bottom: 2rem;
+  animation: glow 2s infinite alternate;
+}
+
+
+// === PROJECTS SECTION ===
+.projects-section {
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  gap: 20px;
+  grid-template-columns: 50% auto; 
+
+  @include mobile {
+      grid-template-columns: 1fr; 
+      height: auto; 
+      padding: 1rem;
+  }
+}
+
+// === Project Card ===
+.project {
+  @include center();
+  margin-top: 5px;
+  align-self: center;
+  justify-self: center;
+  width: 100%;
+  height: 100%;
+
+  @include mobile {
+      margin-top: 0;
+  }
+}
+
+.project img {
+  height: 300px;
+  width: 100%;
+  background-color: red;
+  border: 2px solid black;
+  
+  @include mobile {
+      height: auto; 
+      max-height: 300px; 
+  }
+}
