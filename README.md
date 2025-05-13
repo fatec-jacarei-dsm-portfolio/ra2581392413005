@@ -1,2 +1,4 @@
-# ra2581392413005
-Repositório do aluno CLAUDIO DOS SANTOS SIQUEIRA JUNIOR.
+# Portfólio de Projetos - Fatec Jacareí
+### Aluno: CLAUDIO DOS SANTOS SIQUEIRA JUNIOR.
+### Curso: Desenvolvimento de Software Multiplataforma
+### Turma: 1°. Semestre de 2024

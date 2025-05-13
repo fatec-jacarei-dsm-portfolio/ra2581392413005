@@ -1,3 +1,7 @@
+
+
+
+
 // === VARIABLES ===
 $bg-color: #F6F0E0; // fundo cremoso
 $text-color: #0f172a; // azul-escuro suave
@@ -7,16 +11,10 @@ $font-stack: 'Orbitron', 'Roboto', sans-serif;
 
 // === FONTS ===
 
-@font-face {
-  font-family: "Tysla";
-  src: url("./Tysla.otf");
-}
 
-@font-face {
-  font-family:"Frost" ;
- src: url("./jf.otf");
 
-}
+
+
 
 // === BREAKPOINTS ===
 $breakpoint-sm: 640px;  // small devices (ex: iPhone 7+)
@@ -79,7 +77,7 @@ $breakpoint-mobile-max: 768px;
 body {
   background-color: $bg-color;
   color: $text-color;
-  font-family: $font-stack;
+  
   font-size: 16px;
   line-height: 1.5;
   min-height: 100vh;
@@ -92,11 +90,16 @@ body {
 // === HEADINGS ===
 h1, h2, h3, h4, h5, h6 {
   color: $accent-color;
-  font-family: 'Frost';
+  font-family: 'Jack Frost';
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
 // === LINKS ===
 a {
   color: $accent-color;
@@ -191,7 +194,7 @@ footer {
 }
 
 .big-title {
-  font-family: 'Tysla', 'Roboto', sans-serif; // Fonte futurista
+  font-family:"Tysla" ; // Fonte futurista
   font-size: 6rem; // Tamanho bem grande
   color: $accent-color; // Azul ciano vibrante (Vaporwave)
   text-transform: uppercase;
@@ -235,7 +238,9 @@ footer {
   height: 300px;
   width: 100%;
   background-color: red;
-  border: 2px solid black;
+  border: 2px solid ;
+  border-color: $highlight-color;
+  border-radius: 10px;
   
   @include mobile {
       height: auto; 
