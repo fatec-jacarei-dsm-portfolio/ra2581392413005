@@ -3,19 +3,22 @@ const data = [
     id: "1",
     image: "./assets/logo_labw.png",
     title: "LABWIND",
-    description: "Aplicação com foco em solucões metereológicas para lago de furnas"
+    description: "Aplicação com foco em solucões metereológicas para lago de furnas",
+    link: "https://github.com/Steel-Hard/LabWind"
   },
   {
     id: "2",
     image: "./assets/logo_vita.png",
     title: "VITAL-U",
-    description: "Aplicação para gerenciamento de calorias"
+    description: "Aplicação para gerenciamento de calorias",
+    link: "https://github.com/Steel-Hard/VitalU"
   },
   {
     id: "3",
     image: "./assets/logo_hast.png",
     title: "HARDSTOP",
-    description: "Ambiente de apredizagem virtual sobre SCRUM"
+    description: "Ambiente de apredizagem virtual sobre SCRUM",
+    link: "https://github.com/frevisto/hardstop"
   }
 ];
 
@@ -29,7 +32,9 @@ data.forEach((project) => {
   const div = document.createElement("div");
   div.className = "project";
   div.innerHTML = `
-    <img src="${project.image}" alt="${project.title}" />
+  <a href="${project.link}">
+    <img  src="${project.image}" alt="${project.title}" />
+  </a>
     <h2>${project.title}</h2>
     <p>${project.description}</p>
   `;
