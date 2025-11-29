@@ -243,6 +243,21 @@ footer {
   transform: translateY(0);
 }
 
+
+.tech-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+
+.tech-badges img {
+    height: 20px;
+    width: auto;
+    border-radius: 3px;
+}
+
 @media (max-width: 768px) {
   .content {
     padding: 1rem;
@@ -261,3 +276,4 @@ footer {
       font-size: clamp(4rem, 8vw, 4rem);
   }
 }
+
