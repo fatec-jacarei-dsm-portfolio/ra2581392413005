@@ -1,6 +1,31 @@
 const academicData = [
-    {
+      {
         id: "1",
+        image: "./assets/logo_prochat.png",
+        title: "ProconChat",
+        description: "Chatbot de atendimento para o Procon de Jacareí com IA, com foco em auxiliar no atendimento ao consumidor.",
+        part: "Atuei como desenvolvedor backend.",
+        link: "hhttps://github.com/Steel-Hard/ProconChat_Jacarei",
+        techs: [
+            "https://img.shields.io/badge/Typescript-0059EE?style=flat&logo=typescript&logoColor=white", 
+            "https://img.shields.io/badge/PostgreSQL-316192?style=flat&logo=postgresql&logoColor=white"
+            
+        ]
+    },
+      {
+        id: "2",
+        image: "./assets/logo_kicker.png",
+        title: "KICKER",
+        description: "Sistema de informações inteligente focado no monitoramento e análise de desempenho físico de atletas de futebol. .",
+        part: "Atuei como Scrum master, coordenando o rumo do sistema, a equipe de desenvolvimento e auxiliando no desenvolvimento backend.",
+        link: "https://github.com/Steel-Hard/Kicker_IQ",
+        techs: [
+                 "https://img.shields.io/badge/Python-00599C?style=flat&logo=python&logoColor=white", 
+            "https://img.shields.io/badge/Typescript-0059EE?style=flat&logo=typescript&logoColor=white", 
+        ]
+    },
+    {
+        id: "3",
         image: "./assets/logo_vest.png",
         title: "VESTA",
         description: "Um sistema inteligente de detecção de quedas para idosos. A solução é composta por um dispositivo vestível, conectado via Wi-Fi a um aplicativo mobile de monitoramento.",
@@ -15,7 +40,7 @@ const academicData = [
         ]
     },
     {
-        id: "2",
+        id: "4",
         image: "./assets/logo_labw.png",
         title: "LABWIND",
         description: "Aplicação com foco em soluções meteorológicas para o lago de Furnas.",
@@ -28,7 +53,7 @@ const academicData = [
         ]
     },
     {
-        id: "3",
+        id: "5",
         image: "./assets/logo_vita.png",
         title: "VITAL-U",
         description: "Aplicação para gerenciamento de calorias e bem-estar. atuei gerindo uma equipe e desenvolvendo partes do backend.",
@@ -36,13 +61,13 @@ const academicData = [
         link: "https://github.com/Steel-Hard/VitalU",
         techs: [
             "https://img.shields.io/badge/Scrum-Master-blue?style=flat",
-                        "https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB",
+            "https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB",
             "https://img.shields.io/badge/Backend-Node-green?style=flat",
             "https://img.shields.io/badge/PostgreSQL-316192?style=flat&logo=postgresql&logoColor=white"
         ]
     },
     {
-        id: "4",
+        id: "6",
         image: "./assets/logo_hast.png",
         title: "HARDSTOP",
         description: "Ambiente de aprendizagem virtual gamificado sobre SCRUM.",
@@ -53,7 +78,8 @@ const academicData = [
             "https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white",
             "https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black"
         ]
-    }
+    },
+  
 ];
 
 const personalData = [
