@@ -2,7 +2,7 @@ const academicData = [
       {
         id: "1",
         image: "./assets/logo_prochat.png",
-        title: "ProconChat",
+        title: "ProconChat - 6DSM",
         description: "Chatbot com inteligência artificial que auxilia o atendimento do Procon de Jacareí e orienta consumidores.",
         part: "Atuei como desenvolvedor backend.",
         link: "https://github.com/Steel-Hard/ProconChat_Jacarei",
@@ -16,7 +16,7 @@ const academicData = [
       {
         id: "2",
         image: "./assets/logo_kicker.png",
-        title: "KICKER",
+        title: "KICKER - 5DSM",
         description: "Sistema inteligente de apoio à análise do desempenho físico de atletas de futebol, ajudando comissões técnicas a acompanhar dados e embasar decisões.",
         part: "Atuei como Scrum master, coordenando o rumo do sistema, a equipe de desenvolvimento e auxiliando no desenvolvimento backend.",
         link: "https://github.com/Steel-Hard/Kicker_IQ",
@@ -32,7 +32,7 @@ const academicData = [
     {
         id: "3",
         image: "./assets/logo_vest.png",
-        title: "VESTA",
+        title: "VESTA - 4DSM",
         description: "Solução de monitoramento para idosos que combina um dispositivo vestível de detecção de quedas com um aplicativo mobile conectado por Wi-Fi.",
         part: "Atuei como desenvolvedor backend, onde fui responsável por criar lógica de intregração entre frontend - backend - dispositivel.",
         link: "https://github.com/Steel-Hard/Vesta",
@@ -47,7 +47,7 @@ const academicData = [
     {
         id: "4",
         image: "./assets/logo_labw.png",
-        title: "LABWIND",
+        title: "LABWIND - 3DSM",
         description: "Aplicação meteorológica voltada ao lago de Furnas, reunindo recursos para apoiar o acompanhamento das condições climáticas da região.",
         part: "Atuei como desenvolvedor full stack, implementando modelo de banco de dados assim como criando interface de usuário.",
         link: "https://github.com/Steel-Hard/LabWind",
@@ -62,7 +62,7 @@ const academicData = [
     {
         id: "5",
         image: "./assets/logo_vita.png",
-        title: "VITAL-U",
+        title: "VITAL-U - 2DSM",
         description: "Aplicação de acompanhamento nutricional que permite registrar informações pessoais e hábitos alimentares, calcular calorias e visualizar o consumo diário.",
         part: "Atuei como Scrum Master.",
         link: "https://github.com/Steel-Hard/VitalU",
@@ -78,7 +78,7 @@ const academicData = [
     {
         id: "6",
         image: "./assets/logo_hast.png",
-        title: "HARDSTOP",
+        title: "HARDSTOP - 1DSM",
         description: "Ambiente virtual de aprendizagem gamificado que apresenta conceitos e práticas do Scrum de forma interativa.",
         part: "Atuei como desenvolvedor frontend, criando telas e processos de intregração com a api.",
         link: "https://github.com/frevisto/hardstop",
