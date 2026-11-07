@@ -1,0 +1,39 @@
+gemini --resume "d379cdbd-55fe-4cc9-be9b-8583af801ab8"
+
+
+agora vou pedir umaa tarefa complexa sobre a utilização desse microservice no @frontend/ 1. na pagina do atleta você vai precisar melhorar o     
+   gráfico do historico ifscore detecção de anomalia pois não esta exibindo nada mesmo os dados vindo corretamente. tenho o exemplo em [Image       
+   ...le_ifscore.png]  você tambem pode analisar a construção na api pois ela dispoem uma pagian de exemplo. 2. retire a seção carga da pagina do   
+   atleta 3. adiciona na seção nalise ia o sugestão de substitutos que tem no nesse micro service [Image ...stituicoes.png]  exemplo na imagem. 4.  
+   na pagina de comparar você vai ter que modificar para poder comprar mais de dois jogadores, ou seja as metricas vão mudar um pouco olheo exemplo 
+   em [Image comparar.png]  é claro que o grafico de radar eve ficar parecido mas o metodo de seleção de jogadores pode continuar sendo o mesmo so  
+   que com a posibilidade de seleciornar mais de um em cada lado. 5. agora temos o ranking de anomalias que deve ser exibido de forma dinamida na   
+   dashboard do frontend [Image ...e_anomalia.png]  e tambem a distribução da classificação por seção e os dados superiores da @"docs/distribuição  
+   de classificação das sessoes.png"  onde temos dados relevantes. LEMBRESE ANTES DE TUDO VERIFIQUE A DOCS DA API EM @analise_atletas_kicker_v6     
+   para realizar uma integração perfeita sem erros. esta tudo funcionando ok nessa api, você so vai precisar modificar o @frontend/ adicionar rotas 
+   e integrar com gráficos e funcionalidades novas destacas na tasks.
+
+Novos Gráficos de Análise:
+       * Perfil Físico do Elenco (Radar): Exibe a média de desempenho físico do time em 6 eixos.
+       * Matriz de Risco (Dispersão): Cruza os dados de Carga Semanal vs PSE para identificar atletas em zona de fadiga ou risco de lesão.
+       * Evolução de Carga (Área): Mostra a tendência de carga média do elenco ao longo das últimas jornadas.
+
+ Principais Melhorias:
+
+   1. Integração com Backend Real: O dashboard agora consome dados agregados diretamente do DashboardService, trazendo métricas reais de todo o
+      elenco em vez de cálculos puramente locais.
+   2. Novos Gráficos de Análise:
+       * Perfil Físico do Elenco (Radar): Exibe a média de desempenho físico do time em 6 eixos.
+       * Matriz de Risco (Dispersão): Cruza os dados de Carga Semanal vs PSE para identificar atletas em zona de fadiga ou risco de lesão.
+       * Evolução de Carga (Área): Mostra a tendência de carga média do elenco ao longo das últimas jornadas.
+   3. Preservação e Evolução da UI:
+       * Mantive o padrão de KPI Cards no topo com deltas de desempenho.
+       * A seção de Top Performers agora utiliza o componente de Avatar e exibe o Score de performance calculado pelo backend.
+       * O design utiliza os tokens de cores do sistema (var(--primary), var(--success), var(--danger)).
+   4. Robustez e Tipagem:
+       * Removi todos os usos de any no frontend, garantindo que o projeto passe nos testes de lint e build.
+       * Adicionei interfaces detalhadas para o retorno da API no apiService.
+   5. Dinamismo:
+       * Adicionei animações de entrada nos gráficos.
+  A página está pronta para produção e pode ser acessada em /dashboard. O sistema de sincronização garante que, caso o backend demore a responder,
+  um estado de loading elegante seja exibido.
